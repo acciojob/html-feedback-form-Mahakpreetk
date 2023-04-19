@@ -8,8 +8,9 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form action="submit-feedback.php" method="POST">
      <h2>Feedback Form</h2>
-	<form>
+	
 		<label for="name">Name:</label>
 	<input type="text" id="name" name="name" minlength="3" maxlength="50" required>
     <br>
@@ -17,13 +18,8 @@
 	<label for="portfolio">Portfolio:</label>
 	<input type="url" id="portfolio" name="portfolio" required>
 	<br>
-	<label for="favcolor">Favorite Color:</label>
-	<select id="favcolor" name="favcolor">
-		<option value="selectoption">Please Select Option</option>
-		<option value="red">Red</option>
-		<option value="green">Green</option>
-		<option value="blue">Blue</option>
-	</select>
+	 <label for="favColor">Favorite Color:</label>
+  <input type="color" id="favColor" name="favColor" required>
 	<br>
 	<label for="likeness">How much do you like this color? (1-100)</label>
   <input type="range" id="likeness" name="likeness" min="1" max="100" required>
